@@ -60,9 +60,7 @@ public class HW2 {
 		}
 	}
 
-	public static void Task2(String [] files)
-	{
-		String fileType = "";
+	public static void Task2(String [] files){
 		for (int i = 0; i < files.length; i++) {
 			File file = new File(files[i]);
 			System.out.println("Расширение файла: " + getFileExtension(file));
