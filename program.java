@@ -1,24 +1,26 @@
 public class program {
     public static void main(String[] args) {
-        //task 1
-        String[] arr = {"Вася 1231", "Вася 1111",
-                        "Игорь 11131", "Игорь 1231",
-                        "Игорь 1231", "Игорь 1231",
-                        "Игорь 1231", "Игорь 1231",
-                        "Игорь 1231", "Игорь 1231",
-                        "Петя 44431", "Петя 1231"};
-        System.out.println(HW5.createAndPrintPhonebook(arr));
-        //task 2
-        var names = new String[]{"Иван Иванов", "Светлана Петрова", "Кристина Белова",
-                "Анна Мусина", "Анна Крутова", "Иван Юрин", "Петр Лыков",
-                "Павел Чернов", "Петр Чернышов", "Мария Федорова",
-                "Марина Светлова", "Мария Савина", "Мария Рыкова",
-                "Марина Лугова", "Анна Владимирова", "Иван Мечников",
-                "Петр Петин", "Иван Ежов"};
-        System.out.println("Посчитанные без сортировки " + HW5.countPersons(names));
-        System.out.println("Посчитанные с сортировкой " + HW5.sortedTreeByValue(HW5.countPersons(names)));
+        HW6.list.add(new HW6("SuperNote", HW6.CpuVendors.AMD,
+                HW6.Vendors.Asus, HW6.Color.black, HW6.OS.WithoutOS));
+        HW6.list.add(new HW6("23", HW6.CpuVendors.Intel,
+                HW6.Vendors.Asus, HW6.Color.black, HW6.OS.WithoutOS));
+        HW6.list.add(new HW6("31", HW6.CpuVendors.AMD,
+                HW6.Vendors.MSI, HW6.Color.red, HW6.OS.Windows));
+        HW6.list.add(new HW6("fdhfh", HW6.CpuVendors.AMD,
+                HW6.Vendors.Lenovo, HW6.Color.black, HW6.OS.WithoutOS));
+        HW6.list.add(new HW6("1133", HW6.CpuVendors.AMD,
+                HW6.Vendors.Asus, HW6.Color.green, HW6.OS.DOS));
+        HW6.list.add(new HW6("14213", HW6.CpuVendors.AMD,
+                HW6.Vendors.Asus, HW6.Color.blue, HW6.OS.Linux));
+
+        HW6.printFiltered("Asus");
         System.out.println();
-        System.out.println(HW5.countPersons(names));
-        System.out.println(HW5.sortedTreeByValue(HW5.countPersons(names)));
+        HW6.printFiltered("Intel");
+        System.out.println();
+        HW6.printFiltered("AMD");
+        System.out.println();
+        HW6.printFiltered("31");
+        System.out.println();
+        HW6.printFiltered("Linux");
     }
 }
